@@ -1,7 +1,8 @@
 everything you need to get pihole running in one simple file
 
 install docker and docker compose
-sudo apt update && sudo apt upgrade -y 
+
+sudo apt update && sudo apt upgrade -y
 curl -sSL https://get.docker.com | sh
 sudo usermod -aG docker $USER
 docker run hello-world
