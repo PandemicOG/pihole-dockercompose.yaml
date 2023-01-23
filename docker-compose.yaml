@@ -11,7 +11,8 @@ services:
       - "80:80/tcp"
       - "443:443/tcp"
     environment:
-      TZ: 'Asia/Kolkata' #this is the time zone
+      TZ: 'America/Chicago' #this is the time zone
+      WEBPASSWORD: 'set a secure password here or it will be random'
     volumes:
        - './etc-pihole/:/etc/pihole/'
        - './etc-dnsmasq.d/:/etc/dnsmasq.d/'
